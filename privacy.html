@@ -39,6 +39,7 @@ footer{margin-top:60px;font-size:13px;color:var(--muted)}
 <p><strong>Trips.</strong> Destination, dates, transport, airline and bags, packing lists, the “Before you leave” checklist and the names of companions you add.</p>
 <p><strong>Shared trips.</strong> Trip details and the “Together” section (what is brought and by whom) are visible to every member of that trip. Your personal list is visible only to you.</p>
 <p><strong>Wardrobe and outfits.</strong> Photos of clothes you take or choose, categories, seasons, outfits and your day-by-day plan. Before a photo is saved, the app removes any face, and a photo that still shows a face is not saved. Your wardrobe is visible only to you.</p>
+<p><strong>Notifications.</strong> Packing reminders are scheduled by your phone itself and nothing is sent anywhere. For notifications from friends (for example, when someone adds you to a trip or asks you to bring something) we store a technical notification token for your device, linked to your account, together with the app language. You can turn them off in Profile or in iPhone Settings; the token is removed when you sign out.</p>
 <p><strong>Contacts.</strong> When you invite a friend, we use only the contact you pick (name and phone or email) to create an encrypted invite key. Your address book is never uploaded.</p>
 <p><strong>Purchases.</strong> Payments are handled by Apple. We only receive confirmation that Premium was bought, never card details.</p>
 <p><strong>What we don't collect:</strong> device location, analytics, advertising identifiers or screen recordings.</p>
@@ -52,6 +53,7 @@ footer{margin-top:60px;font-size:13px;color:var(--muted)}
 <p>Only with the services the app cannot work without:</p>
 <ul>
 <li><strong>Google (Firebase Authentication, Cloud Firestore, Google Sign-In)</strong> – sign-in and data storage.</li>
+<li><strong>Google (Firebase Cloud Messaging, Cloud Functions) and Apple (Push Notification service)</strong> – delivering notifications from friends.</li>
 <li><strong>Apple</strong> – Sign in with Apple, App Store purchases, place search (Apple Maps / MapKit) and, in the App Store version, the forecast (Apple Weather / WeatherKit); what you search for, the destination's coordinates and the dates are sent.</li>
 <li><strong>Open-Meteo</strong> – forecast in test builds only; the destination's coordinates and dates are sent.</li>
 <li><strong>Wikimedia (Wikipedia, Wikidata, Commons)</strong> – destination photos; the place's name and coordinates are sent.</li>
@@ -80,6 +82,7 @@ footer{margin-top:60px;font-size:13px;color:var(--muted)}
 <p><strong>Патувања.</strong> Дестинација, датуми, превоз, авиокомпанија и багаж, листи за пакување, листата „Пред излез“ и имињата на сопатниците што ги додаваш.</p>
 <p><strong>Заеднички патувања.</strong> Деталите на патувањето и делот „Заедно“ (што се носи и кој го носи) ги гледаат сите членови на тоа патување. Твојата лична листа ја гледаш само ти.</p>
 <p><strong>Гардероба и аутфити.</strong> Фотографии од облека што ги правиш или избираш, категории, сезони, аутфити и план по денови. Пред да се зачува сликата, апликацијата го отстранува лицето, а слика на која останува лице не се зачувува. Гардеробата ја гледаш само ти.</p>
+<p><strong>Известувања.</strong> Потсетниците за пакување ги закажува самиот телефон и ништо не се праќа. За известувањата од пријателите (на пример, кога некој те додава во патување или те означува да понесеш нешто) чуваме технички токен за известувања на твојот уред, поврзан со акаунтот, и јазикот на апликацијата. Ги исклучуваш во Профил или во Поставки на iPhone; токенот се брише кога ќе се одјавиш.</p>
 <p><strong>Контакти.</strong> Кога каниш пријател, го користиме само контактот што ќе го избереш (име и број или е-пошта) за да направиме шифриран клуч за поканата. Твојот именик не се праќа никаде.</p>
 <p><strong>Купувања.</strong> Плаќањето го води Apple. Ние добиваме само потврда дека Premium е купен, без податоци за картичката.</p>
 <p><strong>Што не собираме:</strong> локација на уредот, аналитика, рекламни идентификатори и снимки од екранот.</p>
@@ -93,6 +96,7 @@ footer{margin-top:60px;font-size:13px;color:var(--muted)}
 <p>Само со услугите без кои апликацијата не може да работи:</p>
 <ul>
 <li><strong>Google (Firebase Authentication, Cloud Firestore, Google Sign-In)</strong> – најава и чување на податоците.</li>
+<li><strong>Google (Firebase Cloud Messaging, Cloud Functions) и Apple (Push Notification service)</strong> – праќање известувања од пријателите.</li>
 <li><strong>Apple</strong> – Најава со Apple, купувања преку App Store, пребарување места (Apple Maps / MapKit) и, во верзијата од App Store, прогнозата (Apple Weather / WeatherKit). Се праќаат тоа што го пребаруваш, координатите на дестинацијата и датумите.</li>
 <li><strong>Open-Meteo</strong> – прогноза само во тест-верзиите. Се праќаат координатите на дестинацијата и датумите.</li>
 <li><strong>Wikimedia (Wikipedia, Wikidata, Commons)</strong> – фотографии од дестинацијата. Се праќаат името и координатите на местото.</li>
