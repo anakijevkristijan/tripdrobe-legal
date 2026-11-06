@@ -30,12 +30,12 @@ footer{margin-top:60px;font-size:13px;color:var(--muted)}
 <a class="brand" href="index.html">TRIPDROBE</a>
 <nav class="lang"><a href="#en">English</a><a href="#mk">Македонски</a></nav>
 <section id="en" lang="en"><h1>Privacy Policy</h1>
-<p>Effective: October 30, 2026</p>
+<p>Effective: November 6, 2026</p>
 <p>Tripdrobe (“the app”) is developed and run by Kristijan Anakijev, Hristo Tatarchev 47j 1/22, 1000 Skopje, North Macedonia (“we”). We are responsible for processing your personal data. For anything about privacy, write to <a href="mailto:tripdrobe@gmail.com">tripdrobe@gmail.com</a>.</p>
 <p>In short: we collect only what the app needs to work. No ads, no behavioural tracking, and we never sell data.</p>
 <h2>What we collect</h2>
 <p><strong>Account.</strong> Name, email and an account identifier. If you sign in with Google or Apple, we receive your name and email from them (with Apple this may be a private relay address). Your password is handled by Firebase Authentication; we never see it.</p>
-<p><strong>Phone number (optional).</strong> If you enter it, it stays on your phone. We upload only a one-way fingerprint (SHA-256) of your number and email so friends can find you when they invite you to a trip.</p>
+<p><strong>Phone number (optional).</strong> If you enter it, we keep it in your account so it's still there when you sign out and back in. Only you can see it — the database rules don't let anyone else read it. So that friends can find you when they invite you to a trip, a separate lookup list stores only a one-way fingerprint (SHA-256) of your number and email; the number can't be read from it and is never shown to others.</p>
 <p><strong>Trips.</strong> Destination, dates, transport, airline and bags, packing lists, the “Before you leave” checklist and the names of companions you add.</p>
 <p><strong>Shared trips.</strong> Trip details and the “Together” section (what is brought and by whom) are visible to every member of that trip. Your personal list is visible only to you.</p>
 <p><strong>Wardrobe and outfits.</strong> Photos of clothes you take or choose, categories, seasons, outfits and your day-by-day plan. Before a photo is saved, the app removes any face, and a photo that still shows a face is not saved. Your wardrobe is visible only to you.</p>
@@ -62,7 +62,7 @@ footer{margin-top:60px;font-size:13px;color:var(--muted)}
 <h2>Where it is stored</h2>
 <p>Your trips, wardrobe and profile are stored in Google Cloud Firestore in the European Union (region eur3). Sign-in data (Firebase Authentication) may also be processed by Google in the US and other countries; for transfers outside the EU/EEA Google relies on the EU–US Data Privacy Framework and Standard Contractual Clauses. Data is encrypted in transit and database access is restricted by security rules.</p>
 <h2>How long we keep it</h2>
-<p>For as long as you have an account. Data on your phone is removed when you sign out. When you delete your account (Settings → Delete account), we immediately delete your profile, wardrobe, outfits, the trips you own, and your list and membership in other people's trips. Items you added to the “Together” section of someone else's trip stay with the other members.</p>
+<p>For as long as you have an account. Data on your phone is removed when you sign out. When you delete your account (Settings → Delete account), we immediately delete your profile (including your phone number), wardrobe, outfits, the trips you own, and your list and membership in other people's trips. Items you added to the “Together” section of someone else's trip stay with the other members.</p>
 <h2>Your rights</h2>
 <p>You can request access, correction, deletion, restriction or portability of your data, and you can object to processing. Most of this you can do yourself in the app; for anything else write to <a href="mailto:tripdrobe@gmail.com">tripdrobe@gmail.com</a>. We reply within 30 days. You may complain to the Personal Data Protection Agency of North Macedonia (<a href="https://azlp.mk">azlp.mk</a>) or to the data protection authority where you live.</p>
 <p><strong>California residents:</strong> we do not sell or “share” personal information under the CCPA/CPRA, and you have the right to know what we hold and to ask for deletion. The app does not track you across other apps or websites, so “Do Not Track” signals have nothing to change.</p>
@@ -73,12 +73,12 @@ footer{margin-top:60px;font-size:13px;color:var(--muted)}
 <h2>Contact</h2>
 <p>Kristijan Anakijev, Hristo Tatarchev 47j 1/22, 1000 Skopje, North Macedonia · <a href="mailto:tripdrobe@gmail.com">tripdrobe@gmail.com</a></p></section>
 <section id="mk" lang="mk"><h1>Политика за приватност</h1>
-<p>Важи од: 30 октомври 2026</p>
+<p>Важи од: 6 ноември 2026</p>
 <p>Tripdrobe („апликацијата“) ја развива и одржува Кристијан Анакијев, ул. Христо Татарчев 47ј 1/22, 1000 Скопје, Северна Македонија („ние“). Ние сме одговорни за обработката на твоите лични податоци. За сè што е поврзано со приватноста пиши на <a href="mailto:tripdrobe@gmail.com">tripdrobe@gmail.com</a>.</p>
 <p>Накратко: собираме само она што е потребно за апликацијата да работи. Немаме реклами, не го следиме твоето однесување и не продаваме податоци.</p>
 <h2>Кои податоци ги собираме</h2>
 <p><strong>Акаунт.</strong> Име, е-пошта и идентификатор на акаунтот. Ако се најавиш со Google или Apple, од нив ги добиваме името и е-поштата (кај Apple може да биде скриена адреса). Лозинката ја чува Firebase Authentication и ние не ја гледаме.</p>
-<p><strong>Телефонски број (по избор).</strong> Ако го внесеш, останува на твојот телефон. Во базата праќаме само шифриран отпечаток (SHA-256) од бројот и од е-поштата, за да можат пријателите да те најдат кога те канат на патување.</p>
+<p><strong>Телефонски број (по избор).</strong> Ако го внесеш, го чуваме во твојот акаунт, за да остане и кога ќе се одјавиш и пак ќе се најавиш. Го гледаш само ти — правилата на базата не дозволуваат никој друг да го чита. За пријателите да можат да те најдат кога те канат на патување, во посебна листа за пребарување се чува само шифриран отпечаток (SHA-256) од бројот и од е-поштата; од него бројот не може да се прочита и не им се покажува на другите.</p>
 <p><strong>Патувања.</strong> Дестинација, датуми, превоз, авиокомпанија и багаж, листи за пакување, листата „Пред излез“ и имињата на сопатниците што ги додаваш.</p>
 <p><strong>Заеднички патувања.</strong> Деталите на патувањето и делот „Заедно“ (што се носи и кој го носи) ги гледаат сите членови на тоа патување. Твојата лична листа ја гледаш само ти.</p>
 <p><strong>Гардероба и аутфити.</strong> Фотографии од облека што ги правиш или избираш, категории, сезони, аутфити и план по денови. Пред да се зачува сликата, апликацијата го отстранува лицето, а слика на која останува лице не се зачувува. Гардеробата ја гледаш само ти.</p>
@@ -105,7 +105,7 @@ footer{margin-top:60px;font-size:13px;color:var(--muted)}
 <h2>Каде се чуваат</h2>
 <p>Патувањата, гардеробата и профилот се чуваат во базата Google Cloud Firestore во Европската Унија (регион eur3). Податоците за најава (Firebase Authentication) Google може да ги обработува и во САД и во други држави; за пренос надвор од ЕУ/ЕЕП користи ја Рамката за приватност на податоци ЕУ–САД и стандардни договорни клаузули. Податоците патуваат шифрирано, а пристапот до базата е ограничен со безбедносни правила.</p>
 <h2>Колку долго ги чуваме</h2>
-<p>Додека го имаш акаунтот. Од телефонот податоците се бришат при одјава. Кога ќе го избришеш акаунтот (Поставки → Избриши акаунт), веднаш се бришат профилот, гардеробата, аутфитите, патувањата чиј сопственик си, како и твојата листа и членство во туѓите патувања. Тоа што си го додал во делот „Заедно“ на туѓо патување останува кај другите членови.</p>
+<p>Додека го имаш акаунтот. Од телефонот податоците се бришат при одјава. Кога ќе го избришеш акаунтот (Поставки → Избриши акаунт), веднаш се бришат профилот (со телефонскиот број), гардеробата, аутфитите, патувањата чиј сопственик си, како и твојата листа и членство во туѓите патувања. Тоа што си го додал во делот „Заедно“ на туѓо патување останува кај другите членови.</p>
 <h2>Твоите права</h2>
 <p>Имаш право да побараш пристап до податоците, исправка, бришење, ограничување на обработката и пренос, како и да се спротивставиш на обработката. Повеќето можеш сам во апликацијата, а за сè друго пиши на <a href="mailto:tripdrobe@gmail.com">tripdrobe@gmail.com</a>. Ќе ти одговориме најдоцна за 30 дена. Имаш право на приговор до Агенцијата за заштита на личните податоци (<a href="https://azlp.mk">azlp.mk</a>) или до надлежниот орган во државата каде што живееш.</p>
 <p><strong>Жители на Калифорнија:</strong> не продаваме и не „споделуваме“ лични податоци според CCPA/CPRA и имаш право да дознаеш кои податоци ги имаме и да побараш бришење. Апликацијата не следи корисници низ други апликации и сајтови, па сигналите „Do Not Track“ немаат што да сменат.</p>
